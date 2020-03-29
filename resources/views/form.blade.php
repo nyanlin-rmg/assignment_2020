@@ -15,7 +15,7 @@
                         @csrf
                         <div class="form-group {{ $errors->has('name') ? ' has-error' : ''}}">
                             <label for="name">Name</label>
-                            <input type="text" class="form-control" name="name" value="{{ old('value') }}" id="name">
+                            <input type="text" class="form-control" name="name" value="{{ old('name') }}" id="name">
                             @if($errors->has('name'))
                                 <span class="help-block small" style="color: red; font-style: italic">
                                 <strong>{{ $errors->first('name') }}</strong>
@@ -60,7 +60,7 @@
                         </div>
                         <div class="form-group" {{ $errors->has('address') ? ' has-error' : ''}}>
                             <label for="address">Address</label>
-                            <textarea name="address" id="address" class="form-control">{{ old('value') }}</textarea>
+                            <textarea name="address" id="address" class="form-control">{{ old('address') }}</textarea>
                             @if($errors->has('address'))
                                 <span class="help-block small" style="color: red; font-style: italic">
                                 <strong>{{ $errors->first('address') }}</strong>

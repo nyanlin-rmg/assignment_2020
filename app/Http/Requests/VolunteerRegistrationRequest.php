@@ -29,8 +29,8 @@ class VolunteerRegistrationRequest extends FormRequest
             'nrc' => 'required',
             'father_name' => 'required',
             'occupation' => 'required',
-            'address' => 'required',
-            'accept' => 'required'
+            'address' => 'required|min:50',
+            'accept' => 'required|'
         ];
     }
 
@@ -42,7 +42,8 @@ class VolunteerRegistrationRequest extends FormRequest
             'nrc.required' => 'NRC number cannot be empty',
             'father_name.required' => 'Father name cannot be empty',
             'occupation.required' => 'Occupation cannot be empty',
-            'address.required' => 'Address cannot be empty'
+            'address.required' => 'Address cannot be empty',
+            'address.min' => 'Write at least 50'
         ];
     }
 }

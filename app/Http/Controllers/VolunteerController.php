@@ -16,7 +16,7 @@ class VolunteerController extends Controller
             'nrc_number' => $request->nrc,
             'father_name' => $request->father_name,
             'occupation' => $request->occupation,
-            'address' => $request->address
+            'address' => $request->address,
         ]);
 
         $volunteer->save();
