@@ -69,7 +69,7 @@
                         </div>
                         <div class="form-group">
                             <span class="small">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur commodi consequuntur corporis, delectus, dolor eius fugiat hic labore magnam, magni nemo officiis pariatur saepe sapiente sequi sunt unde vero.
+                                I agree all Terms & Regulations.
                             </span>
                             <div>
                                 <input type="checkbox" name="accept" class="custom-checkbox" id="acceptCheck"
@@ -91,7 +91,7 @@
     <script>
         function checkForm() {
             if($('#acceptCheck').is(":checked") === false) {
-                alert("Check The Accept");
+                alert("Check the agree checkbox.");
                 return false;
             }
             return true;
