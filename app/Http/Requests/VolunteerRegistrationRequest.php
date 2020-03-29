@@ -28,6 +28,7 @@ class VolunteerRegistrationRequest extends FormRequest
             'dob' => 'required|date',
             'nrc' => 'required',
             'father_name' => 'required',
+            'phone' => 'required|digits:11',
             'occupation' => 'required',
             'address' => 'required|min:50',
             'accept' => 'required|'
@@ -43,7 +44,9 @@ class VolunteerRegistrationRequest extends FormRequest
             'father_name.required' => 'Father name cannot be empty',
             'occupation.required' => 'Occupation cannot be empty',
             'address.required' => 'Address cannot be empty',
-            'address.min' => 'Write at least 50'
+            'address.min' => 'Write at least 50',
+            'phone.required' => 'Phone number cannot be empty',
+            'phone.digits' => 'Phone number must be number with length 10'
         ];
     }
 }

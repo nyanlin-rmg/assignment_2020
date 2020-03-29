@@ -14,6 +14,7 @@ class VolunteerController extends Controller
             'name' => $request->name,
             'dob' => $request->dob,
             'nrc_number' => $request->nrc,
+            'phone' => $request->phone,
             'father_name' => $request->father_name,
             'occupation' => $request->occupation,
             'address' => $request->address,
