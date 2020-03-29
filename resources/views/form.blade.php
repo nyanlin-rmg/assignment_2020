@@ -33,7 +33,7 @@
                         </div>
                         <div class="form-group {{ $errors->has('nrc') ? ' has-error' : ''}}">
                             <label for="name">NRC Number</label>
-                            <input type="text" class="form-control" name="nrc" value="{{ old('nrc') }}">
+                            <input type="text" class="form-control" name="nrc" value="{{ old('nrc') }}" placeholder="eg. 9/AhMaZa(C)012345">
                             @if($errors->has('nrc'))
                                 <span class="help-block small" style="color: red; font-style: italic">
                                 <strong>{{ $errors->first('nrc') }}</strong>
