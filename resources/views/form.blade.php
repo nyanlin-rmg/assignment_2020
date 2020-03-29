@@ -40,6 +40,15 @@
                             </span>
                             @endif
                         </div>
+                        <div class="form-group {{ $errors->has('phone') ? ' has-error' : ''}}">
+                            <label for="name">Phone Number</label>
+                            <input type="text" class="form-control" name="phone" value="{{ old('phone') }}">
+                            @if($errors->has('phone'))
+                                <span class="help-block small" style="color: red; font-style: italic">
+                                <strong>{{ $errors->first('phone') }}</strong>
+                            </span>
+                            @endif
+                        </div>
                         <div class="form-group">
                             <label for="father_name" {{ $errors->has('father_name') ? ' has-error' : ''}}>Father Name</label>
                             <input type="text" class="form-control" name="father_name" value="{{ old('father_name') }}">

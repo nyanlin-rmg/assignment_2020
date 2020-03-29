@@ -17,6 +17,7 @@ class CreateVolunteersTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->date('dob');
+            $table->bigInteger('phone');
             $table->string('nrc_number');
             $table->string('father_name');
             $table->string('occupation');
